@@ -20,14 +20,14 @@ print('------------------------------------')
 
 #3.Determine el registro con la temperatura más alta y el más bajo en el dataset.
 #Este me dice la temperatura mas alta
-temp_alta= df['Temperatura'].max()
+#temp_alta= df['Temperatura'].max()
 
-#Este solo me dice donde esta la temperatura mas alta
-#temp_alta2= df['Temperatura'].idxmax()
+#Este solo me dice la fila donde esta la temperatura mas alta
+temp_alta2= df['Temperatura'].idxmax()
 
-print(f'Temperatura más alta: {temp_alta}')
+print(f'Temperatura más alta: {temp_alta2}')
 
-temp_baja = df['Temperatura'].min()
+temp_baja = df['Temperatura'].idxmin()
 print(f'Temperatura más baja: {temp_baja}')
 print('------------------------------------')
 
