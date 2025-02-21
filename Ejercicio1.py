@@ -27,3 +27,4 @@ print('------------------------------------')
 #4.Encuentre el precio promedio de los productos vendidos.
 mediana = df.groupby('Producto')['Precio_Unitario'].mean()
 print(f'Media de los productos vendidos: {mediana}')
+

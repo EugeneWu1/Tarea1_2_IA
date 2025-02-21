@@ -46,3 +46,9 @@ print('-------------------------------------')
 #7.Muestre los 5 estudiantes con el promedio más bajo.
 promedioBajo = calificaciones_Estudiantes.sort_values().head(5)
 print(f'Estudiantes con el promedio mas bajo: {promedioBajo}')
+
+#EXPLICACION DE RESULTADOS
+#Podemos observar que las calificaciones promedio por materia casi todas ronda por 73 y la más alta es arte con 74.
+#Solo unos pocos estudiantes tienen calificaciones arriba de 85.
+#La clase con más calificaciones registradas es inglés y al igual que los estudiantes con calificaciones arriba de 85
+#Solo hay unos pocos reprobados

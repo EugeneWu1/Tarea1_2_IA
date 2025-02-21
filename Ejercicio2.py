@@ -45,10 +45,17 @@ print('------------------------------------')
 #5.Encuentre cuántos registros tienen una temperatura mayor a 30°C.
 condicion = df['Temperatura'] > 30
 registros = df[condicion].shape[0]
-print(f'Registros con temperatura mayor a 30°C: {registros}')
+print(f'Registros con temperatura mayor a 30: {registros}')
 print('------------------------------------')
 
 #6.Cuenta cuántos días en total hay registrados por cada ciudad.
 
 dias = df.groupby('Ciudad')['Fecha'].count()
 print(f'Días registrados por ciudad: {dias}')
+
+
+#EXPLICACION DE RESULTADOS
+#Con la información de ciudades y sus climas en ciertos días pude conocer la temperatura promedio por ciudad, cuál es la temperatura máxima
+#así como la más baja. Mediante un filtrado más riguroso pude determinar que ciudad tiene las temperaturas más bajas y más altas que en este fue al ciudad de Madrid en ambos.
+#Así como saber temperaturas que fueron mayor a 30 que en total fueron 50 y cuántos registros fueron registrados en donde Madrid tuvo la mayor 
+#cantidad de registros.
